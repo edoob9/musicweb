@@ -41,12 +41,12 @@ def autoplay_audio(file_path: str):
 
 
 st.write("# Audio Playing List!")
-autoplay_audio("./music/classic.mp3")
+autoplay_audio("./classic.mp3")
 
 
 st.header("Music : In-vehicle music and video player")
 st.subheader("Let's start")
-st.video('~/video/CoopernautIntro.mp4')
+st.video('~/CoopernautIntro.mp4')
 
 # def autoplay_audio(file_path: str, is_auto = True):
 #     with open(file_path, "rb") as f:
