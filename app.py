@@ -14,7 +14,7 @@ st.set_page_config(
 
 st.header("Music : In-vehicle music and video player")
 st.subheader("Let's start")
-st.video('./CoopernautIntro.mp4')
+# st.video('./CoopernautIntro.mp4')
 
 
 def autoplay_audio(file_path: str):
