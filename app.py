@@ -18,15 +18,26 @@ def autoplay_audio(file_path: str):
     with open(file_path, "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
-        md = f"""
-            <audio controls autoplay="true">
-            <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+        audio_html = f"""
+            <audio id="audio" controls autoplay>
+                <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+                Your browser does not support the audio element.
             </audio>
-            """
-        st.markdown(
-            md,
-            unsafe_allow_html=True,
-        )
+            <script>
+                var audio = document.getElementById('audio');
+                audio.play();
+            </script>
+        """
+        st.markdown(audio_html, unsafe_allow_html=True)
+        # md = f"""
+        #     <audio controls autoplay="true">
+        #     <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+        #     </audio>
+        #     """
+        # st.markdown(
+        #     md,
+        #     unsafe_allow_html=True,
+        # )
 
 
 st.write("# Auto-playing Audio!")
