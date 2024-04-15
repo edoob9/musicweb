@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.header("Music : work on homepage")
 st.subheader("sssss")
-st.video('/CoopernautIntro.mp4')
+st.video('./CoopernautIntro.mp4')
 
 def autoplay_audio(file_path: str):
     with open(file_path, "rb") as f:
