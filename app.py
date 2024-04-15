@@ -23,6 +23,12 @@ def autoplay_audio(wav_file, is_auto = True):
                 <audio controls autoplay="true">
                 <source src="data:audio/mp3;base64,{b64}" type="audio/wav">
                 </audio>
+                <script>
+                     window.onload = function() {{
+                     var audio = document.getElementById('audio');
+                     audio.play(controls=False);
+                 }};
+                 </script>
                 """
         else:
             md = f"""
