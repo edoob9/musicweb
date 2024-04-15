@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.header("Music : work on homepage")
 st.subheader("sssss")
-st.video('/Users/eden/Downloads/CoopernautIntro.mp4')
+st.video('/CoopernautIntro.mp4')
 
 def autoplay_audio(file_path: str):
     with open(file_path, "rb") as f:
@@ -30,7 +30,7 @@ def autoplay_audio(file_path: str):
 
 
 st.write("# Auto-playing Audio!")
-autoplay_audio("/Users/eden/Downloads/test.mp3")
+autoplay_audio("/test.mp3")
 
 #audio_file = open('/Users/eden/Downloads/test.mp3', 'rb')
 #st.audio(audio_file.read(), format='audio/mp3')
