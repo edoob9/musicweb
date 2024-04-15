@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.header("Music : In-vehicle music and video player")
 st.subheader("Let's start")
-st.video('./CoopernautIntro.mp4')
+st.video('./video/CoopernautIntro.mp4')
 
 # def autoplay_audio(file_path: str, is_auto = True):
 #     with open(file_path, "rb") as f:
@@ -88,7 +88,7 @@ def autoplay_audio(file_path: str):
 
 
 st.write("# Audio Playing List!")
-autoplay_audio("./classic.mp3")
+autoplay_audio("./music/classic.mp3")
 
 #audio_file = open('/Users/eden/Downloads/test.mp3', 'rb')
 #st.audio(audio_file.read(), format='audio/mp3')
