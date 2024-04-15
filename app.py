@@ -11,6 +11,12 @@ st.set_page_config(
 )
 
 
+
+st.header("Music : In-vehicle music and video player")
+st.subheader("Let's start")
+st.video('./CoopernautIntro.mp4')
+
+
 def autoplay_audio(file_path: str):
     with open(file_path, "rb") as f:
         data = f.read()
@@ -39,15 +45,8 @@ def autoplay_audio(file_path: str):
         #     unsafe_allow_html=True,
         # )
 
-
 st.write("# Audio Playing List!")
 autoplay_audio("./classic.mp3")
-
-
-st.header("Music : In-vehicle music and video player")
-st.subheader("Let's start")
-st.video('./CoopernautIntro.mp4')
-
 # def autoplay_audio(file_path: str, is_auto = True):
 #     with open(file_path, "rb") as f:
 #         data = f.read()
