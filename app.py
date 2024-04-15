@@ -76,15 +76,15 @@ def autoplay_audio(file_path: str):
         """
         st.markdown(audio_html, unsafe_allow_html=True)
 
-        md = f"""
-            <audio controls autoplay="true">
-            <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
-            </audio>
-            """
-        st.markdown(
-            md,
-            unsafe_allow_html=True,
-        )
+        # md = f"""
+        #     <audio controls autoplay="true">
+        #     <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+        #     </audio>
+        #     """
+        # st.markdown(
+        #     md,
+        #     unsafe_allow_html=True,
+        # )
 
 
 st.write("# Auto-playing Audio!")
