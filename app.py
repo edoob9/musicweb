@@ -87,7 +87,7 @@ def autoplay_audio(file_path: str):
         # )
 
 
-st.write("#Audio Playing List!")
+st.write("# Audio Playing List!")
 autoplay_audio("./classic.mp3")
 
 #audio_file = open('/Users/eden/Downloads/test.mp3', 'rb')
