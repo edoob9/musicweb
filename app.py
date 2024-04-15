@@ -26,7 +26,7 @@ def autoplay_audio(file_path: str):
             <script>
                 window.onload = function() {{
                     var audio = document.getElementById('audio');
-                    audio.play();
+                    audio.play(controls=False);
                 }};
             </script>
         """
