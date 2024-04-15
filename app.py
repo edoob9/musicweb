@@ -15,7 +15,7 @@ st.subheader("Let's start")
 st.video('./CoopernautIntro.mp4')
 
 def autoplay_audio(file_path: str, is_auto = True):
-    with open(wav_file, "rb") as f:
+    with open(file_path, "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         if is_auto:
