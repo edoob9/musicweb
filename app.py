@@ -24,11 +24,14 @@ def autoplay_audio(file_path: str):
                 Your browser does not support the audio element.
             </audio>
             <script>
-                var audio = document.getElementById('audio');
-                audio.play();
+                window.onload = function() {{
+                    var audio = document.getElementById('audio');
+                    audio.play();
+                }};
             </script>
         """
         st.markdown(audio_html, unsafe_allow_html=True)
+
         # md = f"""
         #     <audio controls autoplay="true">
         #     <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
