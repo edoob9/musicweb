@@ -6,12 +6,12 @@ from time import sleep
 
 st.set_page_config(
     page_icon = "🤖",
-    page_title = "test",
+    page_title = "Eden's In-vehicle",
     layout = "wide",
 )
 
-st.header("Music : work on homepage")
-st.subheader("sssss")
+st.header("Music : In-vehicle music and video player")
+st.subheader("Let's start")
 st.video('./CoopernautIntro.mp4')
 
 def autoplay_audio(file_path: str):
