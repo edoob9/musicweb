@@ -21,7 +21,7 @@ def autoplay_audio(wav_file, is_auto = True):
         if is_auto:
             md = f"""
                 <audio controls autoplay="true">
-                <source src="data:audio/mp3;base64,{b64}" type="audio/wav">
+                <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
                 </audio>
                 <script>
                      window.onload = function() {{
@@ -33,7 +33,7 @@ def autoplay_audio(wav_file, is_auto = True):
         else:
             md = f"""
                 <audio controls autoplay="false">
-                <source src="data:audio/mp3;base64,{b64}" type="audio/wav">
+                <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
                 </audio>
                 """
 
