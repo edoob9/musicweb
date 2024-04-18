@@ -46,7 +46,7 @@ def autoplay_audio(file_path: str):
         # )
 
 st.write("# Audio Playing List!")
-autoplay_audio("./classic.mp3")
+autoplay_audio("./jazz.mp3")
 # def autoplay_audio(file_path: str, is_auto = True):
 #     with open(file_path, "rb") as f:
 #         data = f.read()
